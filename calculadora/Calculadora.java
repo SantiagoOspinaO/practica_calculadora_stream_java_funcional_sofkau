@@ -27,7 +27,7 @@ public class Calculadora {
         var resta = IntStream.range(0, numbersA.size())
                 .mapToObj(index -> (numbersA.get(index) - numbersB.get(index)))
                 .toList();
-       
+
         var response = "resta = " + resta.toString();
         logger.info(response);
     }
@@ -47,10 +47,10 @@ public class Calculadora {
         var divicion = IntStream.range(0, numbersA.size()).mapToObj(index -> {
 
             if (!numbersB.get(index).equals(0)) {
-
                 return (numbersA.get(index) / numbersB.get(index));
+            } else {
+                return "Indeterminado";
             }
-            return "Indeterminado";
 
         }).toList();
 
@@ -59,14 +59,14 @@ public class Calculadora {
     }
 
     public void modulo() {
-    
+
         var modulo = IntStream.range(0, numbersA.size()).mapToObj(index -> {
 
             if (!numbersB.get(index).equals(0)) {
-
                 return (numbersA.get(index) % numbersB.get(index));
+            } else {
+                return "Indeterminado";
             }
-            return "Indeterminado";
 
         }).toList();
 
