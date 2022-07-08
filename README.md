@@ -1,4 +1,4 @@
-## :nerd_face::computer: SOFKAU - PRACTICA JAVA FUNCIONAL - CALCULADORA CON STRREAM
+## :nerd_face::computer: SOFKAU - PROGRAMACIÓN FUNCIONAL / CALCULADORA
 
 
 **Descripción**    
